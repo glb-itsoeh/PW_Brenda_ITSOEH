@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Coquina Repostería</title>
+     <!-- Bootstrap  -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  	<!-- Header contiene un grupo de elementos introductorios o de navegación. -->
+<header>
+	<!-- Utilizamos el componente Navbar, es un encabezado de navegación receptivo de Bootstrap, la barra de navegación. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- anchura variable -->
+    <div class="container-fluid">
+        <!--Etiqueta img se utiliza para incrustar una imagen en este caso el logo de la repostería-->
+        <img src="...\images\logo.png" alt="" width="30" height="24">
+        <!--.navbar-brand para el nombre de su empresa, producto o proyecto.-->
+        <a class="navbar-brand" href="#">Coquina Pastisserie</a>
+        <!--button representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!--toggler mostrará únicamente cuando el menú se colapse y se ocultará cuando el menú aparezca expandido.-->
+        <span class="navbar-toggler-icon"></span>
+        </button><!--Fin del botón-->
+        <!--.collapse.navbar-collapse para agrupar y ocultar el contenido de la barra de navegación por un punto de interrupción principal.-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- .navbar-nav para una navegación ligera y de altura completa-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Elemento de envoltura para el posicionamiento-->
+                <li class="nav-item">
+                <!--marcar el elemento del menú que está activo o seleccionado -->
+                <a class="nav-link active" aria-current="page" href="orden.html">Orden</a>
+                </li>
+                <!-- Elemento de envoltura para el posicionamiento-->
+                <li class="nav-item">
+                <!--.nav-link a la sección a mostrar-->
+                <a class="nav-link" href="#">Galería</a>
+                </li>
+                <!--El menú desplegable (dropdown) también es un "li" que se define en la clase "dropdown"-->
+                <li class="nav-item dropdown">
+                <!--Añadir elemento desplegable a nuestro menús de navegación-->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                </a>
+                <!--Añadir el menú desplegable de  acuerdo a los requerimientos de la repostería-->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-menu" href="#">Pasteles</a></li>
+                    <li><a class="dropdown-item" href="#">Galletas</a></li>
+                    <li><a class="dropdown-item" href="#">Gelatinas</a></li>
+                    <li><a class="dropdown-item" href="#">Pays</a></li>
+                </ul>
+                </li>
+            </ul>
+            <!--Etiqueta de HTML que representa un formulario.-->
+            <form class="d-flex">
+                <!--Redimensionando campos de formulario-->
+                <input class="form-control me-2" type="search" placeholder="Escribe aqui" aria-label="Escribe aqui">
+                <!--button representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar-->
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="mx-auto" style="width: 900px;">
+  <!-- Aqui empieza el formulario-->
+  <form id = "form3" mehotd="post" action= "principal.html">
+      <!--P, es para indicar que ah[i comienza un parrafo
+    "fs-n", Da un tamano al parrafo-->
+    <p class="fs-3">Agregar una dirección</p>
+    <p class="fs-8">O recoja sus paquetes en una sucursal fisíca,  haga  <a href="#" class="text-reset">click aquí</a> .</p>
+    <!--"mb-3", da un interdelineado de 3mm-->
+    
+    <div class="mb-3">
+      <!--InputAddres sirve para ingresar datos-->
+      <label for="inputAddress" class="form-label">Nombre completo</label>
+      <!--placeholder, sirve para escribir un texto dentro de una caja input -->
+      <input type="text" class="form-control" id="inputAddress" placeholder="Nombre(s), Apellido Paterno, Apellido Materno">
+    </div>
+
+    <div class="mb-3">
+      <label for="inputAddress" class="form-label">País</label>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>-- Selecione un país --</option>
+        <option value="1">México</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <!--InputAddres sirve para ingresar datos-->
+      <label for="inputAddress" class="form-label">Código Postal</label>
+      <!--placeholder, sirve para escribir un texto dentro de una caja input -->
+      <input type="text" class="form-control" id="inputAddress"> <a href="#" class="text-reset">No sé mi código</a>
+    </div>  
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label"> Estado</label>
+      <input class="form-control" type="text" disabled>
+      <label for="disabledTextInput" class="form-label">Delegación / Municipio</label>
+      <input class="form-control" type="text" disabled>
+    </div>   
+
+    <div class="mb-3">
+      <!--Las class row y col, sirven para dividir una seccinon en pequenas secciones como si fuera una tabla-->
+      <div class="row">
+        <div class="col">
+          <!--InputAddres sirve para ingresar datos-->
+          <label for="inputAddress" class="form-label">Calle</label>
+          <!--placeholder, sirve para escribir un texto dentro de una caja input -->
+          <input type="text" class="form-control" id="inputAddress">
+        </div>
+        <div class="col">
+          <!--InputAddres sirve para ingresar datos-->
+          <label for="inputAddress" class="form-label">No. Ext</label>
+          <!--placeholder, sirve para escribir un texto dentro de una caja input -->
+          <input type="text" class="form-control" id="inputAddress">
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="inputAddress" class="form-label">¿Entre qué calles está? (opcional)</label>
+      <!--Las class row y col, sirven para dividir una seccinon en pequenas secciones como si fuera una tabla-->
+      <div class="row">
+        <div class="col">
+          <!--InputAddres sirve para ingresar datos-->
+          <label for="inputAddress" class="form-label">Calle 1</label>
+          <!--placeholder, sirve para escribir un texto dentro de una caja input -->
+          <input type="text" class="form-control" id="inputAddress">
+        </div>
+        <div class="col">
+          <!--InputAddres sirve para ingresar datos-->
+          <label for="inputAddress" class="form-label">Calle 2</label>
+          <!--placeholder, sirve para escribir un texto dentro de una caja input -->
+          <input type="text" class="form-control" id="inputAddress">
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Indicaciones adicionales para entregar tus compras en esta dirección</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <label for="exampleFormControlTextarea1" class="form-label">¿Es tu trabajo o tu casa?</label>              
+    <div class="mb-3">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">Trabajo</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">Casa</label>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <!--InputAddres sirve para ingresar datos-->
+      <label for="inputAddress" class="form-label">Teléfono de contacto</label>
+      <!--placeholder, sirve para escribir un texto dentro de una caja input -->
+      <input type="text" class="form-control" id="inputAddress">
+    </div>
+
+    <button type="button" class="btn btn-lg btn-primary" type="submit">Guardar</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg" type="submit">Cancelar</button>
+    </form>
+</div>
+
+<!--"fixed-bottom": Sirve para colocar un elemento en la parte inferior de una ventana de arista a arista -->
+<div class="fixed-bottom">
+  <!--p-1 mb-1 bg-light text-dark, Sirpe para darle a una seccion un color-->
+  <div class="p-1 mb-1 bg-light text-dark">
+    <!--"mx-auto", permite centrar una seccion especifica
+    "width: 150px;", Permite dar un tamano especifico de forma vertical-->
+    <div class="mx-auto" style="width: 150px;">
+      <!--"text-center", permite centrar un texto-->
+      <p class="text-center"></p>Sígueme</p>
+        <a href="https://www.facebook.com/coquinareposteria/?modal=admin_todo_tour&notif_id=1613256049358412&notif_t=page_invite&ref=notif"><img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\face.png"></i></a>
+        <a href="https://www.instagram.com/ceci.reposteria/?hl=es"><img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\insta.png"></i></a>
+    </div>
+  </div>	
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

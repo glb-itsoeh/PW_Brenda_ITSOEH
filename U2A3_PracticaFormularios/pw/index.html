@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Coquina Repostería</title>
+     <!-- Bootstrap  -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  	<!-- Header contiene un grupo de elementos introductorios o de navegación. -->
+<header>
+	<!-- Utilizamos el componente Navbar, es un encabezado de navegación receptivo de Bootstrap, la barra de navegación. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- anchura variable -->
+    <div class="container-fluid">
+        <!--Etiqueta img se utiliza para incrustar una imagen en este caso el logo de la repostería-->
+        <img src="...\images\logo.png" alt="" width="30" height="24">
+        <!--.navbar-brand para el nombre de su empresa, producto o proyecto.-->
+        <a class="navbar-brand" href="#">Coquina Pastisserie</a>
+        <!--button representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!--toggler mostrará únicamente cuando el menú se colapse y se ocultará cuando el menú aparezca expandido.-->
+        <span class="navbar-toggler-icon"></span>
+        </button><!--Fin del botón-->
+        <!--.collapse.navbar-collapse para agrupar y ocultar el contenido de la barra de navegación por un punto de interrupción principal.-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- .navbar-nav para una navegación ligera y de altura completa-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Elemento de envoltura para el posicionamiento-->
+                <li class="nav-item">
+                <!--marcar el elemento del menú que está activo o seleccionado -->
+                <a class="nav-link active" aria-current="page" href="orden.html">Orden </a>
+                </li>
+                <!-- Elemento de envoltura para el posicionamiento-->
+                <li class="nav-item">
+                <!--.nav-link a la sección a mostrar-->
+                <a class="nav-link" href="#">Galería</a>
+                </li>
+                <!--El menú desplegable (dropdown) también es un "li" que se define en la clase "dropdown"-->
+                <li class="nav-item dropdown">
+                <!--Añadir elemento desplegable a nuestro menús de navegación-->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                </a>
+                <!--Añadir el menú desplegable de  acuerdo a los requerimientos de la repostería-->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-menu" href="#">Pasteles</a></li>
+                    <li><a class="dropdown-item" href="#">Galletas</a></li>
+                    <li><a class="dropdown-item" href="#">Gelatinas</a></li>
+                    <li><a class="dropdown-item" href="#">Pays</a></li>
+                </ul>
+                </li>
+            </ul>
+            <!--Etiqueta de HTML que representa un formulario.-->
+            <form class="d-flex">
+                <!--Redimensionando campos de formulario-->
+                <input class="form-control me-2" type="search" placeholder="Escribe aqui" aria-label="Escribe aqui">
+                <!--button representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar-->
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--"position-absolute top-50 start-50 translate-middle", Sirve para seleccionar una seccion y centrarla horizontal y verticalmente-->
+<div class="position-absolute top-50 start-50 translate-middle">
+    <!--"p-3 mb-2 bg-light text-dark", sirve para asignar un color a una seccion -->
+    <div class="p-3 mb-2 bg-light text-dark">
+      <div class="mx-auto" style="width: 500px;">
+         <!-- Aqui empieza el formulario-->
+         <form id = "form1" mehotd="post" action= "inicioSesion.html">
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control">
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                <div class="col-sm-12">
+                    <input type="email" class="form-control" id="inputEmail3">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <div class="col-sm-12">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Al menos 8 caracteres"> 
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <div class="col-sm-12">
+                    <input type="password" class="form-control" id="exampleInputPassword1"> 
+                </div>
+            </div>
+              <div class="mx-auto" style="width: 150px;">
+                <button type="submit" class="btn btn-primary ">Registrarme</button>
+              </div>
+          </form>
+      </div>
+    </div>
+</div>
+<!--"fixed-bottom": Sirve para colocar un elemento en la parte inferior de una ventana de arista a arista -->
+<div class="fixed-bottom">
+  <!--p-1 mb-1 bg-light text-dark, Sirpe para darle a una seccion un color-->
+  <div class="p-1 mb-1 bg-light text-dark">
+    <!--"mx-auto", permite centrar una seccion especifica
+    "width: 150px;", Permite dar un tamano especifico de forma vertical-->
+    <div class="mx-auto" style="width: 150px;">
+      <!--"text-center", permite centrar un texto-->
+      <p class="text-center"></p>Sígueme</p>
+        <a href="https://www.facebook.com/coquinareposteria/?modal=admin_todo_tour&notif_id=1613256049358412&notif_t=page_invite&ref=notif"><img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\face.png"></i></a>
+        <a href="https://www.instagram.com/ceci.reposteria/?hl=es"><img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\insta.png"></i></a>
+    </div>
+  </div>	
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

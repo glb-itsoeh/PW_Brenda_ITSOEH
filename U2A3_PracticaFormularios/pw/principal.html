@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Coquina Repostería</title>
+     <!-- Bootstrap  -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  	<!-- Header contiene un grupo de elementos introductorios o de navegación. -->
+<header>
+	<!-- Utilizamos el componente Navbar, es un encabezado de navegación receptivo de Bootstrap, la barra de navegación. -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  	<!-- anchura variable -->
+  <div class="container-fluid">
+  	<!--Etiqueta img se utiliza para incrustar una imagen en este caso el logo de la repostería-->
+    <img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\logo.png" alt="" width="30" height="24">
+     <!--.navbar-brand para el nombre de su empresa, producto o proyecto.-->
+    <a class="navbar-brand" href="#">Coquina Pastisserie</a>
+     <!--button representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!--toggler mostrará únicamente cuando el menú se colapse y se ocultará cuando el menú aparezca expandido.-->
+      <span class="navbar-toggler-icon"></span>
+    </button><!--Fin del botón-->
+    <!--.collapse.navbar-collapse para agrupar y ocultar el contenido de la barra de navegación por un punto de interrupción principal.-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- .navbar-nav para una navegación ligera y de altura completa-->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Elemento de envoltura para el posicionamiento-->
+        <li class="nav-item">
+          <!--marcar el elemento del menú que está activo o seleccionado -->
+          <a class="nav-link active" aria-current="page" href="orden.html">Orden</a>
+        </li>
+        <!-- Elemento de envoltura para el posicionamiento-->
+        <li class="nav-item">
+          <!--.nav-link a la sección a mostrar-->
+          <a class="nav-link" href="#">Galería</a>
+        </li>
+        <!--El menú desplegable (dropdown) también es un "li" que se define en la clase "dropdown"-->
+        <li class="nav-item dropdown">
+        <!--Añadir elemento desplegable a nuestro menús de navegación-->
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Productos
+          </a>
+          <!--Añadir el menú desplegable de  acuerdo a los requerimientos de la repostería-->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-menu" href="#">Pasteles</a></li>
+            <li><a class="dropdown-item" href="#">Galletas</a></li>
+            <li><a class="dropdown-item" href="#">Gelatinas</a></li>
+            <li><a class="dropdown-item" href="#">Pays</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--Etiqueta de HTML que representa un formulario.-->
+      <form class="d-flex">
+      	<!--Redimensionando campos de formulario-->
+        <input class="form-control me-2" type="search" placeholder="Escribe aqui" aria-label="Escribe aqui">
+        <!--button representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar-->
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</header>
+<main>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\3.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\2.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  <div class="container marketing">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\mision.png" width="100" height="100" />
+        <h2>Misión</h2>
+        <p>Somos una repostería dedica a la elaboración de productos de panadería y pastelería, comprometidos con nuestros clientes en brindarles productos de gran calidad con un servicio amable y oportuno.</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\vision.png" width="100" height="100" />
+        <h2>Visión</h2>
+        <p>Nuestro propósito es ser una de las mejores reposterías, ofreciendo lo mejor que tenemos para nuestros clientes. </p>
+      </div>
+      <div class="col-lg-4">
+        <img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\valores.png" width="100" height="100" />
+        <h2>Valores</h2>
+        <p>Honestidad, respeto, amabilidad, dedicacionn, perseverancia, honradez, sencillez y un buen trabajo en equipo.</p>
+        
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Consiente a tu  persona especial </h2>
+      </div>
+      <div class="col-md-5">
+        <img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\pay.png" width="350" height="350" />
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">La amistad duplica alegrías y divide las angustias por la mitad </h2>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\amistad.png" width="350" height="350" />
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Diseños personalizados </h2>
+      </div>
+      <div class="col-md-5">
+        <img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\aaa.png" width="350" height="350" />
+      </div>
+    </div>
+    <hr class="featurette-divider">
+  </div>
+						<section>
+							<h6>Sígueme</h6>
+							<ul class="plain">
+								<li><i class="icon fa-instagram">&nbsp;<a href="https://www.facebook.com/coquinareposteria/?modal=admin_todo_tour&notif_id=1613256049358412&notif_t=page_invite&ref=notif"><img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\face.png"></i>Facebook</a></li>
+                <li><i class="icon fa-instagram">&nbsp;<a href="https://www.instagram.com/ceci.reposteria/?hl=es"><img src="C:\Users\kali_\OneDrive\Escritorio\Boo\images\insta.png"></i>instagram</a></li>
+							</ul>
+						</section>
+						
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
